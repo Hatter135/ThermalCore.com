@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThermalCore.com</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Welcome to ThermalCore.com</h1>
+        <ul>
+            <li><a href="index.html" class="nav-buttons">Home</a></li>
+            <li><a href="parts.html" class="nav-buttons">PC Parts</a></li>
+            <li><a href="who made this.html" class="nav-buttons">Who Made This?</a></li>
+        </ul>
+    </nav>
+
+    <section class="parts-selection">
+        <h1>What PC Part do you want to learn about?</h1>
+        <select id="pc-part-selector" onchange="showPart()">
+            <option value="">-- Select a part --</option>
+            <option value="gpu">GPU</option>
+            <option value="cpu">CPU</option>
+            <option value="cpu-cooler">CPU-COOLER</option>
+            <option value="ram">RAM</option>
+            <option value="motherboard">Motherboard</option>
+            <option value="psu">PSU</option>
+        </select>
+
+        <!-- Info cards -->
+        <div id="gpu" class="part-info" hidden>
+            <h2>GPU Graphics Processing Unit (Graphics Card)</h2>
+            <p>The GPU renders images and video. Essential for gaming and creative work.</p>
+            <p>Example: AMD RX 6900XT</p>
+            <img src="AMD_RX_6900XT_.jpg" alt="GPU" width="1000" height="480">
+        </div>
+
+        <div id="cpu" class="part-info" hidden>
+            <h2>CPU (Processor)</h2>
+            <p>The CPU is the brain of your PC. It handles all general computation.</p>
+            <p>Example: intel Core i9 14900K</p>
+            <img src="14900k.jpg" alt="CPU" width="480" height="360">
+        </div>
+
+        <div id="cpu-cooler" class="part-info" hidden>
+            <h2>CPU Cooler (Proccessor Fan)</h2>
+            <p>This is what cools the brain of you computer. Without it, you computer lights on fire (not litterly as the cpu adapts to tempritures)</p>
+            <p>Example: Be-Quiet Dark Rock 2 Pro</p>
+            <img src="be_quiet_dark_rock_2_pro_04.jpg" alt="CPU-COOLER" width="438" height="384">
+
+        </div>
+
+        <div id="ram" class="part-info" hidden>
+            <h2>RAM (Memory)</h2>
+            <p>RAM is short-term memory your PC uses to run programs quickly.</p>
+            <p>Example: Cosair VENGEANCE 32GB DDR5 5600MHZ</p>
+            <img src="VENGEANCE.png" alt="RAM" width="438" height="384">
+        </div>
+
+        <div id="motherboard" class="part-info" hidden>
+            <h2>Motherboard</h2>
+            <p>The motherboard connects all your components together.</p>
+            <p>Example: MSI B850 GAMING PLUS</p>
+            <img src="MSI B850 GAMING PLUS.png" alt="MOTHERBOARD" width="438" height="384">
+        </div>
+
+        <div id="psu" class="part-info" hidden>
+            <h2>PSU (Power Supply)</h2>
+            <p>The PSU converts mains power into usable power for your components.</p>
+            <p>Example: MSI MAG A850GL</p>
+            <img src="MSI MAG A850GL.png" alt="PSU" width="438" height="384">
+        </div>
+
+    </section>
+
+    <script src="script.js">
+
+    </script>
+
+</body>
+</html>
